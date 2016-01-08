@@ -22,7 +22,7 @@ class s3fs::params {
             for \"${::operatingsystem}\"")
     }
     default: {
-      fail("\"${module_name}\" provides no java package
+      fail("\"${module_name}\" provides no support
             for \"${::operatingsystem}\"")
     }
   }
