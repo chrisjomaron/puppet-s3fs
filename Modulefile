@@ -1,4 +1,4 @@
-name 'puppet-s3fs'
+name 'puppet_s3fs'
 version '0.0.2'
 source 'git@github.com:MSMFG/puppet-s3fs.git'
 author 'Cake Team'
