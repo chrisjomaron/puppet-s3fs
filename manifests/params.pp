@@ -27,10 +27,10 @@ class s3fs::params {
     }
   }
 
-  $s3fs_version = '1.79'
+  $s3fs_version = '1.80'
   $tarball_url = 'https://github.com/s3fs-fuse/s3fs-fuse/archive'
-  $fuse_url = 'https://github.com/libfuse/libfuse/releases/download/fuse_2_9_4'
-  $fuse_version = '2.9.4'
+  $fuse_url = 'https://github.com/libfuse/libfuse/releases/download/fuse-2.9.7'
+  $fuse_version = '2.9.7'
   $tarball_dir = '/usr/local/src'
 
 }
