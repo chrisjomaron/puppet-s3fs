@@ -10,7 +10,7 @@ class s3fs::fuse {
   wget::fetch { 'fuse':
     source      => "${s3fs::fuse_url}/${fuse_tarball}",
     destination => "${s3fs::tarball_dir}/${fuse_tarball}",
-    require     => Package[$::s3fs::fuse_pkg],
+#    require     => Package[$::s3fs::fuse_pkg],
   }
   exec {'extract-fuse':
     cwd     => $s3fs::tarball_dir,
