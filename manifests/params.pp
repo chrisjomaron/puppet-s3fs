@@ -1,3 +1,4 @@
+
 class s3fs::params {
 
   case $::operatingsystem {
@@ -10,6 +11,7 @@ class s3fs::params {
             'libxml2-devel',
             'openssl-devel',
             'mailcap',
+            'automake',
       ]
       $conflict_pkgs = [
         'fuse',
