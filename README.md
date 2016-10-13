@@ -1,14 +1,9 @@
-# puppet-s3fs
-
-## Overview
-
-This module installs S3FS and FUSE from source tarballs. Note this is only tested on CentOS 6.x.
-
-## Usage
-
-```
-  class { 'wget': } ->
-  class { 's3fs': } ->
+  class { 's3fs':
+    tarball_url  => 'http://mydomain.com/s3fs/',
+    s3fs_version => '1.78',
+    fuse_version => '2.9.3',
+  }
+  ->
   class { 's3fs::credentials':
     accesskey       => 'ABCDEFG',
     secretaccesskey => 'HIJKLMNOPQRS',
@@ -19,4 +14,3 @@ This module installs S3FS and FUSE from source tarballs. Note this is only teste
     mountpoint => '/mnt/mybucket',
     options    => 'passwd_file=/root/.passwd-s3fs,allow_other',
   }
-```
